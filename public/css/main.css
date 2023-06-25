@@ -1,0 +1,42 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/*css files*/
+@import './auth.css';
+
+:root{
+
+    --open-sans: 'Open Sans', sans-serif;
+    --acme: 'Acme', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flash-div{
+    font-family: var(--open-sans);
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top:14%;
+    right: 2%;
+    width: 190px;
+    padding: 6px 9px;
+    box-shadow: 0 10px 26px -3px rgba(0, 0, 0, 0.4);
+    border: 1px solid #9bc400;
+    transition: display 0.8s linear;
+    text-align: center;
+}
+
+@media (max-width:480px){
+
+    .flash-div{
+
+        top:20%;   
+        right: 3%;
+    }
+}
+

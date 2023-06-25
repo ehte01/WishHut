@@ -1,0 +1,38 @@
+<%   layout('layout/boilerplate')   -%>
+
+<div class="login-container">
+
+    <div class="login-nav">
+        <img src="/images/web_logo.png" class="logo" alt="logo">
+        <h3>Are you a <strong><span class="user active">User</span></strong> Or <strong><span class="admin">Admin</span></strong> ?</h3>
+    </div>
+
+    <div class="login-box">
+
+        <div class="form-box">
+
+            <div class="button-box">
+                <div id="btn-box"></div>
+                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="register()">Register</button>
+            </div>
+            <form action="" class="login login-page" method="post">
+                <input type="text" placeholder="Username" name="username" id="username" required>
+                <input type="text" placeholder="Enter Password" name="password" id="password" required>
+                <a href="#" style="font-size: 13px;">Forget Password?</a>
+                <button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form action="" class="login register-page" method="post">
+                <input type="text" placeholder="Username" name="username" id="username" required>
+                <input type="email" placeholder="Enter Email Address" name="email" id="email" required>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required>      
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/js/login.js"></script>

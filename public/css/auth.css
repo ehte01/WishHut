@@ -1,0 +1,134 @@
+
+.login-container{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #fceed1;
+    font-family: var(--open-sans);
+}
+
+.login-nav{
+    box-shadow: 0 4px 26px -3px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.8rem;
+    position: relative;
+}
+.logo{
+    width: 140px;
+}
+
+.login-nav h3 span{
+    color: black;
+    font-weight: 800;
+    margin: 0 3px;
+    cursor: pointer;
+    text-decoration: underline;
+    
+}
+.login-nav h3 span:hover{
+    color: #be2e3a;
+}
+.login-nav h3 span.active{
+    color: #ff5e6c;
+}
+
+.login-box{
+    width: 100%;
+    height: calc(100vh - 75px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box{
+    width: 350px;
+    height: 420px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 32px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    display: flex;
+}
+
+.button-box button{
+    flex: 1;
+    padding: 10px 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    transition: all 0.5s linear;
+}
+#btn-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right,#ff105f,#ffad0f);
+    border-radius: 30px;
+    transition: all 0.5s linear;
+}
+
+.login{
+    width: 70%;
+    min-height: 250px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    gap: 25px;
+    margin: 0 auto;
+}
+
+
+.login input{
+    padding: 7px 3px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #999;
+}
+.submit-btn{
+    padding: 0.8rem 0;
+    cursor: pointer;
+    background: linear-gradient(to right,#ff105f,#ffad0f);
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.login-page{
+    position: absolute;
+    left: 57px;
+    transition: left 0.5s linear;
+}
+.register-page{
+    position: absolute;
+    top: 113px;
+    left: 450px;
+    transition: left 0.5s linear;
+}
+
+@media(max-width:500px){
+    .login-nav {
+        padding: 0.8rem 0.2rem;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
